@@ -1,20 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate Bangladesh</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+
+                extend: {
+                    screens: {
+                        'sm': '375px',
+                        // => @media (min-width: 640px) { ... }
+
+                        'md': '768px',
+                        // => @media (min-width: 768px) { ... }
+
+                        'lg': '1024px',
+                        // => @media (min-width: 1024px) { ... }
+
+                        'xl': '1280px',
+                        // => @media (min-width: 1280px) { ... }
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
 
 
-    <h1>hello world</h1>
+    <header>
+        <div class="bg-[#f9f7f3] mb-4">
+            <div class="contianer w-10/12 mx-auto">
+                <div class="navber flex justify-between items-center pt-4 pb-8">
+                    <div>
+                        <button class="btn text-[1.25rem] px-6 hover:bg-[#B4F461] hover:border-none border-none bg-[#B4F461]">Blog</button>
+                    </div>
+                    <div class="lg:flex items-center sm:hidden">
+                        <img src="./assets/logo.png" alt="">
+                        <h2 class="text-[1.25rem]   font-semibold ml-3">Donate Bangladesh</h2>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/coin.png" alt="">
+                        <h2 class="text-[1.2rem]  font-semibold ml-3 text-[#111111b3]">
+                            <span>5500 </span>
+                            BDT
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="button_section text-center py-6">
+            <button class="btn hover:bg-[#B4F461] text-[1rem] hover:border-none border-none bg-[#B4F461] mr-4">Donation</button>
+
+            <button class="btn btn-outline text-[1rem] text-[#111111b3] border-2 border-[#111111b3] hover:bg-inherit hover:text-[#111111b3]">History</button>
+
+        </div>
+
+         
+    </header>
+
+
+
+    <main></main>
+    <footer></footer>
+
 
 
 
 
     <script src="app.js"></script>
 </body>
+
 </html>

@@ -19,16 +19,16 @@
                 extend: {
                     screens: {
                         'sm': '375px',
-                        // => @media (min-width: 640px) { ... }
+
 
                         'md': '768px',
-                        // => @media (min-width: 768px) { ... }
+
 
                         'lg': '1024px',
-                        // => @media (min-width: 1024px) { ... }
+
 
                         'xl': '1280px',
-                        // => @media (min-width: 1280px) { ... }
+
                     },
                     colors: {
                         clifford: '#da373d',
@@ -47,7 +47,8 @@
             <div class="contianer w-10/12 mx-auto">
                 <div class="navber flex justify-between items-center pt-4 pb-8">
                     <div>
-                        <button class="btn text-[1.25rem] px-6 hover:bg-[#B4F461] hover:border-none border-none bg-[#B4F461]">Blog</button>
+                        <button
+                            class="btn text-[1.25rem] px-6 hover:bg-[#B4F461] hover:border-none border-none bg-[#B4F461]">Blog</button>
                     </div>
                     <div class="lg:flex items-center sm:hidden">
                         <img src="./assets/logo.png" alt="">
@@ -64,20 +65,94 @@
 
             </div>
         </div>
-        
-        <div class="button_section text-center py-6">
-            <button class="btn hover:bg-[#B4F461] text-[1rem] hover:border-none border-none bg-[#B4F461] mr-4">Donation</button>
 
-            <button class="btn btn-outline text-[1rem] text-[#111111b3] border-2 border-[#111111b3] hover:bg-inherit hover:text-[#111111b3]">History</button>
+        <div class="button_section text-center py-6">
+            <button
+                class="btn hover:bg-[#B4F461] text-[1rem] hover:border-none border-none bg-[#B4F461] mr-4">Donation</button>
+
+            <button
+                class="btn btn-outline text-[1rem] text-[#111111b3] border-2 border-[#111111b3] hover:bg-inherit hover:text-[#111111b3]">History</button>
 
         </div>
 
-         
+
     </header>
 
 
 
-    <main></main>
+
+    <main>
+        <div class="w-10/12 mx-auto mt-4">
+
+            <div class="card_container mb-4 lg:flex-row sm:flex-col flex justify-between p-6 rounded-2xl items-center border border-[#1111111a]">
+                <div class="lg:w-1/2 sm:w-full sm:mb-4">
+                    <img src="./assets/noakhali.png" alt="">
+                </div>
+                <div class="lg:w-1/2 sm:w-full">
+                    <button class="btn mb-4 hover:bg-[#f2f2f2] hover:border-none border-none">
+                        <img src="./assets/coin.png" alt="">
+                        <h2 class="text-[#111111b3] text-[1rem] font-semibold"><span>10000 </span>BDT</h2>
+                    </button>
+                    <h2 class="text-[1.25rem] font-semibold mb-2">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-[#111111b3] mb-4"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help
+                        provide essential supplies and to those affected by this disaster. Every contribution, big or
+                        small, makes difference. Please join us in supporting the relief efforts and making a positive
+                        impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-4" />
+                    <button class="btn btn-block hover:bg-[#B4F461] text-[1rem] hover:border-none border-none bg-[#B4F461]">Donate Now</button>
+                </div>
+            </div>
+
+
+
+            <div class="card_container mb-4 lg:flex-row sm:flex-col flex justify-between p-6 rounded-2xl items-center border border-[#1111111a]">
+                <div class="lg:w-1/2 sm:w-full sm:mb-4">
+                    <img src="./assets/feni.png" alt="">
+                </div>
+                <div class="lg:w-1/2 sm:w-full">
+                    <button class="btn mb-4 hover:bg-[#f2f2f2] hover:border-none border-none">
+                        <img src="./assets/coin.png" alt="">
+                        <h2 class="text-[#111111b3] text-[1rem] font-semibold"><span>10000 </span>BDT</h2>
+                    </button>
+                    <h2 class="text-[1.25rem] font-semibold mb-2">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="text-[#111111b3] mb-4"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help
+                        provide essential supplies and to those affected by this disaster. Every contribution, big or
+                        small, makes difference. Please join us in supporting the relief efforts and making a positive
+                        impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-4" />
+                    <button class="btn btn-block hover:bg-[#B4F461] text-[1rem] hover:border-none border-none bg-[#B4F461]">Donate Now</button>
+                </div>
+            </div>
+
+
+
+            <div class="card_container mb-8 lg:flex-row sm:flex-col flex justify-between p-6 rounded-2xl items-center border border-[#1111111a]">
+                <div class="lg:w-1/2 sm:w-full sm:mb-4">
+                    <img src="./assets/quota-protest.png" alt="">
+                </div>
+                <div class="lg:w-1/2 sm:w-full">
+                    <button class="btn mb-4 hover:bg-[#f2f2f2] hover:border-none border-none">
+                        <img src="./assets/coin.png" alt="">
+                        <h2 class="text-[#111111b3] text-[1rem] font-semibold"><span>10000 </span>BDT</h2>
+                    </button>
+                    <h2 class="text-[1.25rem] font-semibold mb-2">Aid for Injured in the Quota Movement</h2>
+                    <p class="text-[#111111b3] mb-4"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help
+                        provide essential supplies and to those affected by this disaster. Every contribution, big or
+                        small, makes difference. Please join us in supporting the relief efforts and making a positive
+                        impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-4" />
+                    <button class="btn btn-block hover:bg-[#B4F461] text-[1rem] hover:border-none border-none bg-[#B4F461]">Donate Now</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
     <footer></footer>
 
 

@@ -7,7 +7,7 @@ const history = document.getElementById('history');
 
 
 
-function donate_amount(id,set_id){
+function donate_amount(id,set_id,title){
       let input_value = document.getElementById(id);
     
       if (isNaN(input_value.value) || !isFinite(input_value.value)){
@@ -23,12 +23,24 @@ function donate_amount(id,set_id){
 
         my_amount.innerText = parseInt(my_amount.innerText) - parseInt(input_value.value);
         document.getElementById('my_modal_5').showModal();
-        input_value.value='';
         
+
+        const history_title =document.getElementById(title);
+        
+        const history_container = document.querySelector('.history_container');
+        history_container.innerHTML += `
+                <div class="border border-[#1111111a] rounded-2xl mt-4 p-[2rem]">
+                         <h2 class="lg:text-[1.25rem] sm:text-[1rem] font-semibold">${input_value.value} Taka is ${history_title.innerText}</h2>
+                         <h3 class="lg:text-[1rem] sm:text-[0.875rem] text-[#111111b3]">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</h3>
+                    </div>
+        `;
+        
+        input_value.value='';
 
       }
            
 }
+
 
 
 donation.addEventListener('click',function(){

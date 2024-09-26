@@ -41,47 +41,49 @@
 
 <body>
 
-
-    <header>
-        <div class="bg-[#f9f7f3] mb-4">
-            <div class="contianer w-10/12 mx-auto">
-                <div class="navber flex justify-between items-center pt-4 pb-8">
-                    <div>
-                        <button onclick="redirect_blog()"
-                            class="btn text-[1.25rem] px-6 hover:bg-[#B4F461] hover:border-none border-none bg-[#B4F461]">Blog</button>
+    <div>
+        <header class="fixed top-[-3px] left-0 right-0">
+            <div class="nav_ber  mb-4">
+                <div class="contianer w-10/12 mx-auto">
+                    <div class="navber flex justify-between items-center pt-4 pb-8">
+                        <div>
+                            <button onclick="redirect_blog()"
+                                class="btn text-[1.25rem] px-6 hover:bg-[#B4F461] hover:border-none border-none bg-[#B4F461]">Blog</button>
+                        </div>
+                        <div class="lg:flex items-center sm:hidden">
+                            <img src="./assets/logo.png" alt="">
+                            <h2 class="text-[1.25rem]   font-semibold ml-3">Donate Bangladesh</h2>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./assets/coin.png" alt="">
+                            <h2 class="text-[1.2rem]  font-semibold ml-3 text-[#111111b3]">
+                                <span id="my_amount">5500 </span>
+                                BDT
+                            </h2>
+                        </div>
                     </div>
-                    <div class="lg:flex items-center sm:hidden">
-                        <img src="./assets/logo.png" alt="">
-                        <h2 class="text-[1.25rem]   font-semibold ml-3">Donate Bangladesh</h2>
-                    </div>
-                    <div class="flex items-center">
-                        <img src="./assets/coin.png" alt="">
-                        <h2 class="text-[1.2rem]  font-semibold ml-3 text-[#111111b3]">
-                            <span id="my_amount">5500 </span>
-                            BDT
-                        </h2>
-                    </div>
+    
                 </div>
-
             </div>
-        </div>
+    
+            <div class="button_section text-center py-6">
+                <button id="donation"
+                    class="btn hover:bg-[#B4F461] text-[1rem] hover:border-none border-none bg-[#B4F461] mr-4">Donation</button>
+    
+                <button id="history"
+                    class="btn  text-[1rem] text-[#111111b3] border-none  hover:text-[#111111b3]">History</button>
+    
+            </div>
+    
+    
+        </header>
+    </div>
+    
 
-        <div class="button_section text-center py-6">
-            <button id="donation"
-                class="btn hover:bg-[#B4F461] text-[1rem] hover:border-none border-none bg-[#B4F461] mr-4">Donation</button>
-
-            <button id="history"
-                class="btn  text-[1rem] text-[#111111b3] border-none  hover:text-[#111111b3]">History</button>
-
-        </div>
-
-
-    </header>
 
 
 
-
-    <main>
+    <main class="mt-[13.75rem]">
         <div class="w-10/12 mx-auto mt-4">
 
             <div class="donation_container">

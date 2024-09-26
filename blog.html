@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+
+                extend: {
+                    screens: {
+                        'sm': '375px',
+
+
+                        'md': '768px',
+
+
+                        'lg': '1024px',
+
+
+                        'xl': '1280px',
+
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="bg-[#f9f7f3] mb-4">
+            <div class="contianer w-10/12 mx-auto">
+                <div class="navber flex justify-between items-center pt-4 pb-8">
+                    <div>
+                        <button onclick="redirect_home()"
+                            class="btn text-[1.25rem] px-6 hover:bg-[#B4F461] hover:border-none border-none bg-[#B4F461]">Home</button>
+                    </div>
+                    <div class="lg:flex items-center sm:hidden">
+                        <img src="./assets/logo.png" alt="">
+                        <h2 class="text-[1.25rem]   font-semibold ml-3">Donate Bangladesh</h2>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/coin.png" alt="">
+                        <h2 class="text-[1.2rem]  font-semibold ml-3 text-[#111111b3]">
+                            <span id="my_amount">5500 </span>
+                            BDT
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main class="w-10/12 mx-auto">
+         
+         <h1 class="lg:text-[3rem] mb-4 sm:text-[2rem] font-bold flex items-center"> <span class="mr-2">Important FAQ</span> <img src="./speech-bubble.gif" alt="" height="50px" width="50px"> </h1>
+
+
+         <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for representing HTML and other structured documents as a tree of nodes. Each node represents a part of the document, such as an element, attribute, text node, or comment.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>
+                    The Document Object Model (DOM) represents an HTML document as a tree structure of nodes. To interact with specific elements within this structure, you need to select them. Here's how you can do it using JavaScript:
+                    Use the <strong>getElementById() </strong> method to select an element based on its unique ID attribute. 
+                    Use the <strong> getElementsByClassName() </strong> method to select all elements with a specific class name.
+                    Use the <strong> getElementsByTagName() </strong> method to select all elements with a specific tag name.
+                    Use the <strong> querySelector() </strong> and <strong> querySelectorAll() </strong> methods to select elements based on CSS selectors. These methods offer more flexibility and can target elements based on various criteria, such as attributes, relationships, and more.
+
+
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>Event Delegation in the context of the DOM is a technique where you attach an event listener to a parent element instead of directly to the child elements. This allows you to handle events for multiple child elements efficiently without having to add individual event listeners to each one.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content">
+                <p>In JavaScript, you can directly modify an element's attributes and styles through the Document Object Model (DOM). This enables you to dynamically change the appearance and behavior of web pages.
+
+                    To manipulate attributes, you can use methods like <strong> setAttribute, </strong> <strong> getAttribute,</strong>  and <strong> removeAttribute. </strong></p>
+              </div>
+            </div>
+          </div>
+
+
+        
+
+
+
+
+        
+
+    </main>
+    <footer></footer>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

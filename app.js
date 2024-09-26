@@ -1,5 +1,4 @@
 
-
 const my_amount =document.getElementById('my_amount');
 const donation = document.getElementById('donation');
 const history = document.getElementById('history');
@@ -39,6 +38,13 @@ function donate_amount(id,set_id,title){
 
       }
            
+}
+
+function redirect_blog(){
+ window.location.replace("./blog.html");
+}
+function redirect_home(){
+ window.location.replace("./index.html");
 }
 
 

@@ -42,13 +42,10 @@ function donate_amount(id,set_id,title){
            
 }
 
-function redirect_blog(){
- window.location.replace("./blog.html");
+function redirect_Page(id){
+    window.location.replace(id);
 }
-function redirect_home(){
- window.location.replace("./index.html");
-}
-
+ 
 
 
 donation.addEventListener('click',function(){
